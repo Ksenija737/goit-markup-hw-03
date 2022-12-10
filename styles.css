@@ -1,0 +1,245 @@
+* колір осн тексту #757575 */
+/* другорядний колір тексту #212121 */
+/* білий колір тексту #FFFFFF */
+/* акцент тексту  #2196F3 */
+/* другорядний колір фону #F5F4FA */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --primary-bg-color: #F5F5F5;
+    --time-bg-color: #F5F4FA;
+    --hero-bg-color: #2F303A;
+    --accent-bg-color: #188CE8;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+/*header*/
+
+/* logo */
+.logo {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.second-logo {
+    color: var(--title-text-color);
+}
+
+/*nav*/
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.site-nav .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+
+.contact-nav .link {
+
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+/*hero*/
+.hero {
+    background-color: var(--hero-bg-color);
+}
+
+.hero-title {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase
+}
+
+/*section*/
+
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+
+/*fetures*/
+.feature-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.feature .text {
+    font-size: 14px;
+    line-height: 1.71px;
+}
+
+/*description*/
+
+/* team */
+
+.section-team {
+    background-color: var(--time-bg-color);
+}
+
+.team-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team .text {
+
+    line-height: 1.19;
+    text-align: center;
+}
+
+/*examples*/
+.work-title {
+
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+
+.work-list .text {
+    color: var(--primary-text-color);
+    line-height: 1.88;
+}
+
+/*button*/
+
+.button {
+    color: var(--title-text-color);
+    background: var(--time-bg-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: inherit;
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button.primary {
+    color: var(--white-color);
+    background: var(--accent-color);
+
+}
+
+.hero .button {
+
+    font-weight: 700;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+}
+
+.button.secondary {
+    color: var(--title-text-color);
+    background: var(--time-bg-color);
+
+}
+
+.hero .button {
+    font-weight: 700;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}
+
+.button:hover,
+.button:focus {
+    color: var(--white-color);
+    background: var(--accent-bg-color);
+}
+
+/* footer */
+.second-logo.footer {
+    color: var(--white-color)
+}
+
+.section.footer {
+    background-color: var(--hero-bg-color);
+}
+
+.contacts .link {
+
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.contacts .address {
+    color: var(--white-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
