@@ -5,47 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфоліо</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Студія</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-<link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="page-header">
         <!--навігація-->
+        <div class="container">
         <nav class="nav">
             <a href=./index.html class="logo">
                 Web<span class="second-logo">Studio</span>
         </a>
-            <ul class="site-nav">
+            <ul class="site-nav list">
                 <li><a href="./index.html" class="link">Студія</a></li>
                 <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
                 <li><a href="#" class="link">Контакти</a></li>
             </ul>
         </nav>
-        <ul class="contact-nav">
+        <ul class="contact-nav list">
             <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
             <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
         </ul>
+        </div>
     </header>
     <main>
         <!--фільтр робіт-->
         <section class="section">
+            <div class="container">
             <h1 class="section-title visually-hidden">Фільтр робіт</h1>
-            <ul class="list-button">
+            <ul class="list-button list">
                 <li><button type="button" class="button primary"> Усі </button></li>
                 <li><button type="button" class="button secondary"> Веб-сайти </button></li>
                 <li><button type="button" class="button secondary"> Додатки</button></li>
                 <li><button type="button" class="button secondary"> Дизайн </button></li>
                 <li><button type="button" class="button secondary"> Маркетинг </button></li>
             </ul>
+            </div>
         <!--приклади робіт-->
+        <div class="container">
             <h2 class="section-title visually-hidden"> Приклади робіт </h2>
-            <ul class="work-list">
+            <ul class="work-list list">
                 <li>
                     <a href="#">
                     <img src="./images/img8.jpg" 
@@ -128,11 +134,13 @@
                     </a>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <!--футер-->
     <footer>
         <section class="section footer">
+            <div class="container">
             <h2 class="visually-hidden">Контакти</h2>
         <a href=./index.html class="logo footer">
             Web<span class="second-logo footer">Studio</span>
@@ -148,6 +156,7 @@
                 <li><a href="mailto:info@devstudio.com" class="link footer">info@devstudio.com</a></li>
             </ul>
         </address>
+        </div>
         </section>
     </footer>
 </body>
