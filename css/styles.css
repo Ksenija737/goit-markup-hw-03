@@ -43,6 +43,7 @@ p {
 .link {
     text-decoration: none;
     color: inherit;
+    
 }
 
 /* Властивості для коректного відображення картинок */
@@ -91,8 +92,19 @@ body{
 
 /*header*/
 
+.main-nav{
+    display: flex;
+    align-items:center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
 /* logo */
 .logo{
+    margin-right: 93px;
+
     color:var(--accent-color) ;
     font-family: Raleway, sans-serif;
     font-size: 26px;
@@ -107,17 +119,28 @@ body{
 
 /*nav*/
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contact-nav .link:hover,
-.contact-nav .link:focus{
-color: var(--accent-color);
-} 
-.site-nav .link.current{
-    color: var(--accent-color);
+.site-nav {
+    display: flex;
 }
 
+.contact-nav {
+    display: flex;
+    margin-left: auto;
+}
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-nav .item + .item{
+    margin-left: 40px;
+}
+
+
 .site-nav .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -128,6 +151,9 @@ color: var(--accent-color);
 
 
 .contact-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     color: var(--primary-text-color);
     font-weight: 500;
@@ -135,6 +161,17 @@ color: var(--accent-color);
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
 }
 
 /*hero*/
@@ -336,7 +373,8 @@ color: var(--accent-color);
 
 }
 .address .address-item-map {
-
+    
+    display: inline-block;
     color: var(--white-color);
 }
 
