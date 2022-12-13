@@ -17,6 +17,7 @@
 *,
 *::before,
 *::after {
+
     box-sizing: border-box;
 }
 
@@ -31,28 +32,28 @@ p {
     margin: 0;
 }
 
-/* Класс для обнулення базових властивостей у списках (ul) */
+/* Клас для обнулення базових властивостей у списках (ul) */
 .list {
     list-style: none;
     padding-left: 0;
     margin: 0;
 }
 
-/* Класс для обнулення базових властивостей у посиланнях */
+/* Клас для обнулення базових властивостей у посиланнях */
 .link {
     text-decoration: none;
     color: inherit;
 }
 
 /* Властивості для коректного відображення картинок */
-img {
+.img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
 /* Властивості  для обнулення курсива у address */
-address {
+.address {
     font-style: normal;
 }
 
@@ -69,10 +70,6 @@ address {
     margin: -1px;
 }
 
-ul {
-    list-style: none;
-    text-decoration: none;
-}
 
 body{
     color:var(--primary-text-color) ;
@@ -179,10 +176,7 @@ color: var(--accent-color);
 
 
 /*fetures*/
-.feature{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
  .feature-title{
     margin-bottom: 10px;
     color:var(--title-text-color) ;
@@ -199,7 +193,9 @@ color: var(--accent-color);
 
 /*description*/
 
-
+.section.description{
+    padding-top: 0;
+}
 
 /* team */
 
@@ -231,8 +227,18 @@ color: var(--accent-color);
     text-align: center;
 }
 
-/*examples*/
-.work-title{
+/* filtr*/
+
+.list-button{
+    margin-bottom: 56px;
+}
+
+/*examples of work*/
+
+.work-card-img{
+    margin-bottom: 20px;
+}
+.work-card-title{
     margin-bottom: 4px;
     color:var(--title-text-color) ;
     font-weight: 700;
@@ -242,7 +248,8 @@ color: var(--accent-color);
 }
 
 
-.work-list .text{
+.work-card-text{
+    margin-bottom: 0;
     color: var(--primary-text-color);
     line-height: 1.88;
 }
@@ -307,22 +314,34 @@ color: var(--accent-color);
     padding: 60px 0px;
     background-color: var(--hero-bg-color);
 }
-.contacts .link{
-    
+
+.address{
+    padding-top: 28px;
+}
+
+.address .link{
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.contacts .address {
+.address-item{
+    margin-bottom: 12px;
+
+}
+.address-item:last-child {
+    margin-bottom: 0px;
+
+}
+.address .address-item-map {
+
     color: var(--white-color);
 }
 
-.contacts .link:hover,
-.contacts .link:focus{
+.address .link:hover,
+.address .link:focus{
     color: var(--accent-color);
 }
 
