@@ -317,6 +317,10 @@ body{
     margin-right: 30px;
     margin-bottom: 30px;
 }
+
+.work-card:nth-child(3n) {
+    margin-right: 0px;
+}
 .work-card-img{
     margin-bottom: 20px;
 }
